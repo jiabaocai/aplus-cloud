@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":discovery" external.linked.project.path="$MODULE_DIR$/../../../discovery" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.ald.cloud" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../discovery">
+      <excludeFolder url="file://$MODULE_DIR$/../../../discovery/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../discovery/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../discovery/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

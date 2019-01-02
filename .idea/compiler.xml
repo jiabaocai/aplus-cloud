@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="aplus-cloud_main" target="1.8" />
+      <module name="aplus-cloud_test" target="1.8" />
+      <module name="cloud_main" target="1.8" />
+      <module name="cloud_test" target="1.8" />
+      <module name="com.ald.cloud_main" target="1.8" />
+      <module name="com.ald.cloud_test" target="1.8" />
+      <module name="config_main" target="1.8" />
+      <module name="config_test" target="1.8" />
+      <module name="consumer_main" target="1.8" />
+      <module name="consumer_test" target="1.8" />
+      <module name="discovery_main" target="1.8" />
+      <module name="discovery_test" target="1.8" />
+      <module name="zuul_main" target="1.8" />
+      <module name="zuul_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
