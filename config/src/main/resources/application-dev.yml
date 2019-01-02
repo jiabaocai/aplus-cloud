@@ -1,0 +1,25 @@
+server:
+  port: 8040
+
+spring:
+  application:
+    name: news-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.ricoye.com/cjb/aplus-config.git
+#          searchPaths: dev
+          label: master
+          username: cjb0331@163.com
+          password: cjb930812
+#          force-pull: true
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1        # 续约更新时间间隔（默认30秒）
+    lease-expiration-duration-in-seconds: 5     # 续约到期时间（默认90秒）
+  client:
+    healthcheck: enabled
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

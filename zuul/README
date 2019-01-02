@@ -1,0 +1,19 @@
+说明:
+    本项目为路由+过滤验证功能
+    本项目缓存插件为redis+ehcache
+    路由为实时更新, 路由配置信息示例调用路径为: /routs/p  查询路径为: /routs/p. 目前配置了两种路由规则, 一种是基于serviceId, 一种基于url
+    过滤器设计为以接口为单位验证, 使用filterOrder顺序调用, 按照优先级排布如下:
+        IpBlackListFilter
+            ip黑名单命中的不允许访问
+        IpWhiteListFilter
+            ip白名单未命中的不允许访问
+        Md5Filter
+            MD5签名校验不通过不允许访问
+        RsaFilter
+            RSA签名校验不通过不允许访问
+        TokenFilter
+            token不符合JWT格式和场景不是aladin不允许访问
+
+2017.12.5
+1. 完成了RSA过滤器和token过滤取(JWT), 其中, 密钥调取方式还需要优化, 目前是系统中的静态变量.
+2. 路由动态化, 路由规则存放在redis中, 动态配置, 可以redis的订阅刷新/本地缓存定时刷新.

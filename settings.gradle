@@ -1,0 +1,6 @@
+rootProject.name = 'aplus-cloud'
+
+include ':config'
+include ':consumer'
+include ':discovery'
+include ':zuul'

@@ -1,0 +1,50 @@
+server:
+  port: 80
+  tomcat:
+    max-threads: 2000
+
+spring:
+  application:
+    name: api-gateway
+  cache:
+    ehcache:
+      config: ehcache.xml
+#  redis:
+#      database: 1
+#      host: 192.168.106.76
+#      port: 6379
+#      password: Hello1234
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+#      timeout: 300000
+
+zuul:
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+#  routes:
+#    api-a:
+#      path: /api-fk/**
+#      serviceId: service-fk
+#    api-b:
+#      path: /api-cs/**
+##      serviceId: service-ribbon
+#      url: http://127.0.0.1/
+
+hystrix:
+    command:
+        default:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 60000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
