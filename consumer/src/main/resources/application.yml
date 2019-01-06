@@ -1,11 +1,24 @@
-server:
-  port: 8010
+#server:
+#  port: 8010
+#
+#spring:
+#  application:
+#    name: news-consumer
+#
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://discovery:8761/eureka/
 
+server:
+  port: 8050
+#服务名字
 spring:
   application:
-    name: news-consumer
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://discovery:8761/eureka/
+    name: api-gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: news-config-server  # 注册中心的服务名
+      profile: dev  # 指定配置文件的环

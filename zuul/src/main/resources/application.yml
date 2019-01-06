@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8060
   tomcat:
     max-threads: 2000
 
@@ -9,21 +9,39 @@ spring:
   cache:
     ehcache:
       config: ehcache.xml
-#  redis:
-#      database: 1
-#      host: 192.168.106.76
-#      port: 6379
-#      password: Hello1234
-#      max-active: 8
-#      max-wait: -1
-#      max-idle: 8
-#      min-idle: 0
-#      timeout: 300000
+  redis:
+    database: 1
+    host: 192.168.106.76
+    port: 6379
+    password: Hello1234
+    max-active: 8
+    max-wait: -1
+    max-idle: 8
+    min-idle: 0
+    timeout: 300000
 
 zuul:
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
+  #API网关配置
+  #路由配置
+  routes:
+    #    auth:    #认证服务
+    #      #响应的路径
+    #      path: /auth/**
+    #      #敏感头信息
+    #      sensitiveHeaders:
+    #      #重定向到的服务（根据服务id名称从注册中心获取服务地址）
+    #      serviceId:  auth-server
+    producer: #生产者服务
+      #响应的路径
+      path: /api-a/**
+      sensitiveHeaders:
+      #重定向到的服务（根据服务id名称从注册中心获取服务地址）
+      serviceId:  aplus-thirdparty
+  #添加代理头
+  add-proxy-headers: true
 #  routes:
 #    api-a:
 #      path: /api-fk/**
@@ -34,12 +52,12 @@ zuul:
 #      url: http://127.0.0.1/
 
 hystrix:
-    command:
-        default:
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 60000
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
 
 eureka:
   client:

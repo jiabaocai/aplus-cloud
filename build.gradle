@@ -43,7 +43,7 @@ subprojects {
         compile "org.springframework.cloud:spring-cloud-starter-eureka:${springCloudVersion}"
         compile "org.springframework.cloud:spring-cloud-starter-zuul:${springCloudVersion}"
         compile "org.springframework.cloud:spring-cloud-starter-config:1.3.4.RELEASE"
-        compile "org.springframework.boot:spring-boot-starter-data-redis"
+//        compile "org.springframework.boot:spring-boot-starter-data-redis"
         compile "org.springframework.boot:spring-boot-starter-cache"
         compile "net.sf.ehcache:ehcache:2.8.3"
         compile "org.apache.commons:commons-lang3:3.3.2"

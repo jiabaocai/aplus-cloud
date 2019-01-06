@@ -1,0 +1,4 @@
+allprojects {
+    group="com.ald.cloud"
+    version = '1.0-SNAPSHOT'
+}

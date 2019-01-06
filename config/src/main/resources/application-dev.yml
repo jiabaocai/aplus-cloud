@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: http://gitlab.ricoye.com/cjb/aplus-config.git
-#          searchPaths: dev
+          #          searchPaths: dev
           label: master
           username: cjb0331@163.com
           password: cjb930812

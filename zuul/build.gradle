@@ -2,3 +2,6 @@ allprojects {
     group="com.ald.cloud"
     version = '1.0-SNAPSHOT'
 }
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-data-redis"
+}
