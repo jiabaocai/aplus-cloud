@@ -1,5 +1,5 @@
 server:
-  port: 8060
+  port: 80
   tomcat:
     max-threads: 2000
 
@@ -21,6 +21,9 @@ spring:
     timeout: 300000
 
 zuul:
+  #  strip-prefix: true
+  # 指定路由前缀,所有请求均需要带此前缀
+  prefix: /api
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
@@ -34,23 +37,23 @@ zuul:
     #      sensitiveHeaders:
     #      #重定向到的服务（根据服务id名称从注册中心获取服务地址）
     #      serviceId:  auth-server
-    producer: #生产者服务
-      #响应的路径
-      path: /api-a/**
-      sensitiveHeaders:
-      #重定向到的服务（根据服务id名称从注册中心获取服务地址）
-      serviceId:  aplus-thirdparty
+    #    producer: #生产者服务
+    #      #响应的路径
+    #      path: /aplus-thirdparty/**
+    #      sensitiveHeaders:
+    #      #重定向到的服务（根据服务id名称从注册中心获取服务地址）
+    #      serviceId:  aplus-thirdparty
+    aplus-thirdparty:
+      ##默认请求不带前缀 需要加上 stripPrefix: false让所有请求带前缀
+      stripPrefix: false
+      path: /aplus-thirdparty/*
+      service-id: aplus-thirdparty
+    aplus-user:
+      stripPrefix: false
+      path: /aplus-user/*
+      service-id: aplus-user
   #添加代理头
   add-proxy-headers: true
-#  routes:
-#    api-a:
-#      path: /api-fk/**
-#      serviceId: service-fk
-#    api-b:
-#      path: /api-cs/**
-##      serviceId: service-ribbon
-#      url: http://127.0.0.1/
-
 hystrix:
   command:
     default:
@@ -62,7 +65,11 @@ hystrix:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+
+##接口白名单，以"，"号分割 此处用于图片或者登陆注册不需要鉴权的接口使用后期会加到redis或者mysql中
+routesurl:
+  /api/aplus-thirdparty/get,/api/aplus-user/login,/api/aplus-user/register
 
 
 
