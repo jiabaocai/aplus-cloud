@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ctrip.framework.apollo:apollo-core:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/gradle-4.10.3/caches/modules-2/files-2.1/com.ctrip.framework.apollo/apollo-core/1.2.0/b4cb3308b6d3aaeaaeebbabfaa25bf558c6bafdc/apollo-core-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/gradle-4.10.3/caches/modules-2/files-2.1/com.ctrip.framework.apollo/apollo-core/1.2.0/9c2c13c372122412efef572a7b243aa87d4137de/apollo-core-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

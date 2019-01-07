@@ -1,5 +1,7 @@
 package com.ald.cloud.zuul.filter;
 
+import com.ctrip.framework.apollo.spring.annotation.ApolloConfig;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.slf4j.Logger;
@@ -14,11 +16,12 @@ import java.util.List;
 /**
  * @program: aplus-cloud
  * @Version 1.0.0
- * @description:
+ * @description: Zuul 前置过滤器：参数校验
  * @author: Mr.cai
  * @create: 2019-01-05 17:02
  * @CopyRight 本内容仅限于北境内部传阅，禁止外泄以及用于其他的商业目的
  **/
+@EnableApolloConfig
 public class AccessFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(AccessFilter.class);
@@ -38,8 +41,11 @@ public class AccessFilter extends ZuulFilter {
         return true;
     }
 
-    @Value("${routesurl}")
+    @Value("${routesur}")
     private String urllist;
+
+    @Value("${ips}")
+    private String ips;
 
     @Override
     public Object run() {
@@ -52,11 +58,9 @@ public class AccessFilter extends ZuulFilter {
 
         log.info("请求IP地址为：[{}]", ipAddr);
         //配置本地IP白名单，生产环境可放入数据库或者redis中
-        List<String> ips = new ArrayList<String>();
-        ips.add("127.0.0.1");
-        ips.add("0:0:0:0:0:0:0:1");
+        List<String> ipsList = Arrays.asList(ips.split(","));
 
-        if (!ips.contains(ipAddr)) {
+        if (!ipsList.contains(ipAddr)) {
             log.info("IP地址校验不通过！！！");
             ctx.setResponseStatusCode(401);
             ctx.setSendZuulResponse(false);

@@ -1,4 +1,4 @@
-spring:
-  profiles:
-    active: dev
-    include:
+app:
+  id: news-eureka-peer2
+apollo:
+  meta: http://172.16.159.110:10000/

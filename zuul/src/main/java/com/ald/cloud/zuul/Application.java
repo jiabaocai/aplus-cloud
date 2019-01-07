@@ -1,6 +1,7 @@
 package com.ald.cloud.zuul;
 
 import com.ald.cloud.zuul.filter.AccessFilter;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -10,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 @EnableZuulProxy
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableApolloConfig
 public class Application {
 
 
