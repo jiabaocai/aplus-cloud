@@ -18,6 +18,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_test.iml" group="discovery-ha" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" group="discovery" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" group="discovery" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" group="zipkin-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" group="zipkin-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" group="zipkin-server" />
     </modules>
   </component>
 </project>

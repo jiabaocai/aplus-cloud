@@ -5,4 +5,5 @@ include ':consumer'
 include ':discovery-ha'
 include ':discovery'
 include ':zuul'
+include ':zipkin-server'
 

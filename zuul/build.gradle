@@ -4,4 +4,7 @@ allprojects {
 }
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-data-redis"
+    //表示zipkin的客户端
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zipkin
+
 }

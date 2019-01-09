@@ -26,6 +26,12 @@
       <module name="peer1_test" target="1.8" />
       <module name="peer2_main" target="1.8" />
       <module name="peer2_test" target="1.8" />
+      <module name="sleuth_main" target="1.8" />
+      <module name="sleuth_test" target="1.8" />
+      <module name="zi_main" target="1.8" />
+      <module name="zi_test" target="1.8" />
+      <module name="zipkin-server_main" target="1.8" />
+      <module name="zipkin-server_test" target="1.8" />
       <module name="zuul-gateway_main" target="1.8" />
       <module name="zuul-gateway_test" target="1.8" />
       <module name="zuul_main" target="1.8" />

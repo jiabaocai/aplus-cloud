@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/consumer" />
             <option value="$PROJECT_DIR$/discovery" />
             <option value="$PROJECT_DIR$/discovery-ha" />
+            <option value="$PROJECT_DIR$/zipkin-server" />
             <option value="$PROJECT_DIR$/zuul" />
           </set>
         </option>
