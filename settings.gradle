@@ -1,9 +1,8 @@
 rootProject.name = 'aplus-cloud'
 
-include ':config'
+//使用apollo做配置文件
+//include ':config'
 include ':consumer'
 include ':discovery-ha'
 include ':discovery'
 include ':zuul'
-include ':zipkin-server'
-

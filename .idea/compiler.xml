@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="admin-server_main" target="1.8" />
+      <module name="admin-server_test" target="1.8" />
       <module name="aplus-cloud_main" target="1.8" />
       <module name="aplus-cloud_test" target="1.8" />
       <module name="aplus-gateway_main" target="1.8" />
@@ -18,6 +20,8 @@
       <module name="config_test" target="1.8" />
       <module name="consumer_main" target="1.8" />
       <module name="consumer_test" target="1.8" />
+      <module name="demo_main" target="1.8" />
+      <module name="demo_test" target="1.8" />
       <module name="discovery-ha_main" target="1.8" />
       <module name="discovery-ha_test" target="1.8" />
       <module name="discovery_main" target="1.8" />
@@ -28,6 +32,8 @@
       <module name="peer2_test" target="1.8" />
       <module name="sleuth_main" target="1.8" />
       <module name="sleuth_test" target="1.8" />
+      <module name="springboot-admin_main" target="1.8" />
+      <module name="springboot-admin_test" target="1.8" />
       <module name="zi_main" target="1.8" />
       <module name="zi_test" target="1.8" />
       <module name="zipkin-server_main" target="1.8" />

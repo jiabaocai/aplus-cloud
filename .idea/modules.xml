@@ -3,24 +3,19 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/aplus-cloud.iml" filepath="$PROJECT_DIR$/.idea/modules/aplus-cloud.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/com.ald.cloud-config.iml" filepath="$PROJECT_DIR$/.idea/modules/config/com.ald.cloud-config.iml" group="config" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/com.ald.cloud-consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/com.ald.cloud-consumer.iml" group="consumer" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul.iml" group="zuul" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul_main.iml" group="zuul" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/com.ald.cloud-zuul_test.iml" group="zuul" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_main.iml" group="config" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/config_test.iml" filepath="$PROJECT_DIR$/.idea/modules/config/config_test.iml" group="config" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/consumer.iml" group="consumer" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/consumer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/consumer_main.iml" group="consumer" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/consumer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/consumer_test.iml" group="consumer" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery.iml" group="discovery" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha.iml" group="discovery-ha" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_main.iml" group="discovery-ha" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery-ha/discovery-ha_test.iml" group="discovery-ha" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_main.iml" group="discovery" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" filepath="$PROJECT_DIR$/.idea/modules/discovery/discovery_test.iml" group="discovery" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server.iml" group="zipkin-server" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_main.iml" group="zipkin-server" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zipkin-server/zipkin-server_test.iml" group="zipkin-server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul.iml" group="zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/zuul_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/zuul_main.iml" group="zuul" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zuul/zuul_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zuul/zuul_test.iml" group="zuul" />
     </modules>
   </component>
 </project>
